@@ -1,6 +1,5 @@
 import logo from './logo.svg';
-
-import MemberItem from './components/MemberItem';
+import MemberItem from './components/MemberItem1';
 function App() {
 	return (
 		<div className="App">
