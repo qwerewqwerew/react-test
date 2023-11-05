@@ -11,11 +11,7 @@ function App() {
 	return (
 		<div className="App">
 			<img src={logo} className="App-logo" alt="logo" style={{ width: '100px' }} />
-			<MemberItem name={MemberDB[0].name} thumb={MemberDB[0].thumb} email={MemberDB[0].email}/>
-			<MemberItem name={MemberDB[1].name} thumb={MemberDB[1].thumb} email={MemberDB[1].email}/>
-			<MemberItem name={MemberDB[2].name} thumb={MemberDB[2].thumb} email={MemberDB[2].email}/>
-			<MemberItem name={MemberDB[3].name} thumb={MemberDB[3].thumb} email={MemberDB[3].email}/>
-			<MemberItem name={MemberDB[4].name} thumb={MemberDB[4].thumb} email={MemberDB[4].email}/>
+			<MemberItem db={MemberDB}/>
 		</div>
 	);
 }
