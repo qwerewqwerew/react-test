@@ -1,7 +1,6 @@
 import './MemberItem.css';
 import MemberItemList from './MemberItemList';
 const MemberItem = (props) => {
-	console.log('MemberItem', props.db);
 
 	return (
 		<ul className='list_body'>
@@ -11,7 +10,7 @@ const MemberItem = (props) => {
 			<MemberItemList id={props.db[3].id} thumb={props.db[3].thumb} name={props.db[3].name} email={props.db[3].email} />
 			<MemberItemList id={props.db[4].id} thumb={props.db[4].thumb} name={props.db[4].name} email={props.db[4].email} /> */}
 			{props.db.map((item) => {
-				return <MemberItemList id={item.id} thumb={item.thumb} name={item.name} email={item.email} />;
+				return <MemberItemList key={item.id} id={item.id} thumb={item.thumb} name={item.name} email={item.email} />;
 			})}
 		</ul>
 	);
