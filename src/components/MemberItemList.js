@@ -3,10 +3,6 @@ import ItemThumb from './ItemThumb';
 import ItemDesc from './ItemDesc';
 
 const MemberItemList = (props) => {
-	//let name = props.name;
-	//const changeName = useState();
-	//const newName = changeName[0];
-	//const newNameFn = changeName[1];
 	const initName = props.name;
 	const [name, setName] = useState(props.name);
 	const [count, setCount] = useState(0);

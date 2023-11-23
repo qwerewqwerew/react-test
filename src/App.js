@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import MemberItem from './components/MemberItem';
+import Layout from './components/layout/Layout';
+import Lists from './components/listViews/Lists';
 function App() {
 	const MemberDB = [
 		{ id: 'm1', name: '김경아', thumb: 'http://qwerew.cafe24.com/images/pet-1.jpg', email: 'abc@defg.com' },
@@ -9,9 +9,10 @@ function App() {
 		{ id: 'm5', name: '이소정', thumb: 'http://qwerew.cafe24.com/images/pet-5.jpg', email: 'opq@defg.com' },
 	];
 	return (
-		<div className="App">
-			<img src={logo} className="App-logo" alt="logo" style={{ width: '100px' }} />
-			<MemberItem db={MemberDB}/>
+		<div className='App'>
+			<Layout>
+				<Lists db={MemberDB} />
+			</Layout>
 		</div>
 	);
 }
