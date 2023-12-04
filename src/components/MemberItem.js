@@ -1,7 +1,6 @@
 import './MemberItem.css';
 import MemberItemList from './MemberItemList';
 const MemberItem = (props) => {
-
 	return (
 		<ul className='list_body'>
 			{props.db.map((item) => {

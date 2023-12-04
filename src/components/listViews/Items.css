@@ -3,8 +3,12 @@
 	padding: 3vw;
 	margin: 5rem auto;
 	border-radius: 2rem;
+	flex-direction: column;
 }
 
 img {
 	width: 25rem;
+}
+.col {
+	flex-direction: column;
 }
