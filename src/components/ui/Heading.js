@@ -1,9 +1,9 @@
-import './Heading.css';
+import c from './Heading.module.css';
 
 const Heading = (props) => {
 	return (
 		<>
-			<h2 className="heading">{props.content}</h2>
+			<h2 className={c.heading}>{props.content}</h2>
 		</>
 	);
 };

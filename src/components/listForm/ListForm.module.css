@@ -1,7 +1,7 @@
 .listform {
 	background: #eeeeee;
 	width: 50vw;
-	margin:auto;
+	margin: auto;
 }
 .input_group {
 	margin-left: 2vw;
@@ -30,4 +30,11 @@
 .listform button:hover,
 .listform button:focus {
 	background: #822293;
+}
+.msg {
+	color: red;
+	font-size: 10px;
+	grid-column: 2/3;
+	letter-spacing: 1px;
+	font-weight: bold;
 }
